@@ -1,11 +1,18 @@
 """Gmail watcher — polls Gmail API and creates Markdown action files."""
 
+import sys
+from pathlib import Path
+
+# Allow running as: python scripts/watchers/gmail_watcher.py
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
 import base64
 import os
 import re
 from datetime import datetime, timezone
 from email.utils import parseaddr, parsedate_to_datetime
-from pathlib import Path
 
 from googleapiclient.errors import HttpError
 
@@ -422,6 +429,9 @@ def _collect_attachment_names(part: dict, names: list[str]) -> None:
 
 if __name__ == "__main__":
     import argparse
+
+    from dotenv import load_dotenv
+    load_dotenv()
 
     parser = argparse.ArgumentParser(description="Gmail Watcher for AI Employee")
     parser.add_argument(

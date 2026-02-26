@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2026-02-26T16:11:16.323357+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_client@example.com_2026-02-26T16-11-16.md",
+    "summary": "[DRY RUN] New email from Client A <client@example.com>: URGENT: Overdue Invoice #2024-001",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:11:16.330268+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_jane.smith@example.com_2026-02-26T16-11-16.md",
+    "summary": "[DRY RUN] New email from Jane Smith <jane.smith@example.com>: Q1 Strategy Meeting — Can you attend Thursday?",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:11:16.354662+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_newsletter@deals.example.com_2026-02-26T16-11-16.md",
+    "summary": "[DRY RUN] New email from Newsletter <newsletter@deals.example.com>: 50% off all products this weekend only!",
+    "result": "success",
+    "error": null
+  }
+]
