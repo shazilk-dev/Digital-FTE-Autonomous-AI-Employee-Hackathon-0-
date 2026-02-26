@@ -1,0 +1,40 @@
+# Secrets — NEVER commit
+.env
+.env.local
+.env.production
+*.key
+*.pem
+credentials.json
+token.json
+token.pickle
+
+# WhatsApp/Browser sessions
+sessions/
+playwright-data/
+user-data-dir/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.uv/
+dist/
+*.egg-info/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+*.bak
+*.swp

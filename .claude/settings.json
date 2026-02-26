@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(Needs_Action/**)",
+      "Write(Plans/**)",
+      "Write(Pending_Approval/**)",
+      "Write(Done/**)",
+      "Write(Logs/**)",
+      "Write(Briefings/**)",
+      "Write(Dashboard.md)",
+      "Write(docs/**)",
+      "Write(scripts/**)",
+      "Write(tests/**)",
+      "Write(mcp-servers/**)",
+      "Bash(python *)",
+      "Bash(node *)",
+      "Bash(npm *)",
+      "Bash(uv *)",
+      "Bash(git *)",
+      "Bash(pytest *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)"
+    ],
+    "deny": [
+      "Write(.env)",
+      "Write(credentials.json)",
+      "Write(token.json)",
+      "Bash(rm -rf *)",
+      "Bash(curl *)",
+      "Bash(wget *)"
+    ]
+  }
+}
