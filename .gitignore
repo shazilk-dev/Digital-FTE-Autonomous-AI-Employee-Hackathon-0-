@@ -33,6 +33,10 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+.obsidian/
+
+# Claude Code
+memory/
 
 # Temporary
 *.tmp
