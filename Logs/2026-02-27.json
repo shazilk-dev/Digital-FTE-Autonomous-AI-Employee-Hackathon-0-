@@ -288,5 +288,35 @@
     "summary": "[DRY RUN] New email from Newsletter <newsletter@deals.example.com>: 50% off all products this weekend only!",
     "result": "success",
     "error": null
+  },
+  {
+    "timestamp": "2026-02-27T13:17:59.478957+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_akn.shazil@gmail.com_2026-02-27T13-17-59.md",
+    "summary": "New email from CSC-23F-089 Shazil Khan CS1B <akn.shazil@gmail.com>: invoice alert",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T13:17:59.526770+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_notifications@link.com_2026-02-27T13-17-59.md",
+    "summary": "New email from Link <notifications@link.com>: Your Link verification code: 219 509",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T13:30:00.000000+00:00",
+    "action_type": "email_send",
+    "actor": "claude_code",
+    "input_file": "Pending_Approval/APPROVAL_email_send_akn.shazil_2026-02-27T13-30-00.md",
+    "output_file": "Approved/APPROVAL_email_send_akn.shazil_2026-02-27T13-30-00.md",
+    "summary": "Sent test email to akn.shazil@gmail.com — subject: 'AI Employee Test' — Message ID: 19c9f48aff200a73",
+    "result": "success",
+    "error": null
   }
 ]

@@ -4,7 +4,7 @@
       "command": "node",
       "args": ["mcp-servers/email-mcp/dist/index.js"],
       "env": {
-        "DRY_RUN": "true",
+        "DRY_RUN": "false",
         "GMAIL_CREDENTIALS_PATH": "./credentials.json",
         "GMAIL_TOKEN_PATH": "./token.json"
       }
