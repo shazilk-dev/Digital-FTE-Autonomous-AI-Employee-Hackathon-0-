@@ -583,6 +583,10 @@ if __name__ == "__main__":
 
     from dotenv import load_dotenv
 
+    # Ensure Unicode output works on Windows (box-drawing chars, emoji)
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     load_dotenv(override=True)
 
     parser = argparse.ArgumentParser(

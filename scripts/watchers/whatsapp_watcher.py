@@ -32,7 +32,7 @@ from scripts.watchers.base_watcher import BaseWatcher  # noqa: E402
 # ---------------------------------------------------------------------------
 
 INTER_CHAT_DELAY = 2.0       # seconds between opening different chats
-PAGE_LOAD_TIMEOUT = 30000    # ms to wait for page elements
+PAGE_LOAD_TIMEOUT = 60000    # ms to wait for page elements
 MESSAGE_READ_DELAY = 1.0     # seconds to "read" messages (human-like)
 MAX_CHATS_PER_CYCLE = 10     # Don't process more than 10 chats per poll
 

@@ -138,5 +138,155 @@
     "summary": "Moved EMAIL_newsletter@deals.example.com_2026-02-27T02-52-46.md to Done",
     "result": "success",
     "error": null
+  },
+  {
+    "timestamp": "2026-02-27T08:58:21.454230+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_client@example.com_2026-02-27T08-58-21.md",
+    "summary": "[DRY RUN] New email from Client A <client@example.com>: URGENT: Overdue Invoice #2024-001",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T08:58:21.484883+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_jane.smith@example.com_2026-02-27T08-58-21.md",
+    "summary": "[DRY RUN] New email from Jane Smith <jane.smith@example.com>: Q1 Strategy Meeting — Can you attend Thursday?",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T08:58:21.512885+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_newsletter@deals.example.com_2026-02-27T08-58-21.md",
+    "summary": "[DRY RUN] New email from Newsletter <newsletter@deals.example.com>: 50% off all products this weekend only!",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T09:00:16.352397+00:00",
+    "action_type": "file_move",
+    "actor": "claude_code",
+    "input_file": "Needs_Action\\email\\EMAIL_client@example.com_2026-02-27T08-58-21.md",
+    "output_file": "Done\\EMAIL_client@example.com_2026-02-27T08-58-21.md",
+    "summary": "Moved EMAIL_client@example.com_2026-02-27T08-58-21.md to Done",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T09:00:19.209685+00:00",
+    "action_type": "file_move",
+    "actor": "claude_code",
+    "input_file": "Needs_Action\\email\\EMAIL_jane.smith@example.com_2026-02-27T08-58-21.md",
+    "output_file": "Done\\EMAIL_jane.smith@example.com_2026-02-27T08-58-21.md",
+    "summary": "Moved EMAIL_jane.smith@example.com_2026-02-27T08-58-21.md to Done",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T09:00:22.681377+00:00",
+    "action_type": "file_move",
+    "actor": "claude_code",
+    "input_file": "Needs_Action\\email\\EMAIL_newsletter@deals.example.com_2026-02-27T08-58-21.md",
+    "output_file": "Done\\EMAIL_newsletter@deals.example.com_2026-02-27T08-58-21.md",
+    "summary": "Moved EMAIL_newsletter@deals.example.com_2026-02-27T08-58-21.md to Done",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:23.175593+00:00",
+    "action_type": "watcher_detect",
+    "actor": "filesystem",
+    "input_file": null,
+    "output_file": "Needs_Action/file/FILE_Invoice_January_2026_2026-02-27T16-20-23.md",
+    "summary": "[DRY RUN] New file_drop from Invoice_January_2026.pdf: File dropped: Invoice_January_2026.pdf",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:23.215216+00:00",
+    "action_type": "watcher_detect",
+    "actor": "filesystem",
+    "input_file": null,
+    "output_file": "Needs_Action/file/FILE_Q1_Sales_Report_2026_2026-02-27T16-20-23.md",
+    "summary": "[DRY RUN] New file_drop from Q1_Sales_Report_2026.csv: File dropped: Q1_Sales_Report_2026.csv",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:23.249373+00:00",
+    "action_type": "watcher_detect",
+    "actor": "filesystem",
+    "input_file": null,
+    "output_file": "Needs_Action/file/FILE_screenshot_dashboard_2026-01_2026-02-27T16-20-23.md",
+    "summary": "[DRY RUN] New file_drop from screenshot_dashboard_2026-01.png: File dropped: screenshot_dashboard_2026-01.png",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:29.162066+00:00",
+    "action_type": "watcher_detect",
+    "actor": "whatsapp",
+    "input_file": null,
+    "output_file": "Needs_Action/whatsapp/WHATSAPP_John_Client_2026-02-27T11-20-29.md",
+    "summary": "[DRY RUN] New whatsapp from John Client: WhatsApp from John Client",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:29.191860+00:00",
+    "action_type": "watcher_detect",
+    "actor": "whatsapp",
+    "input_file": null,
+    "output_file": "Needs_Action/whatsapp/WHATSAPP_Sarah_Colleague_2026-02-27T11-20-29.md",
+    "summary": "[DRY RUN] New whatsapp from Sarah Colleague: WhatsApp from Sarah Colleague",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:29.218774+00:00",
+    "action_type": "watcher_detect",
+    "actor": "whatsapp",
+    "input_file": null,
+    "output_file": "Needs_Action/whatsapp/WHATSAPP_Team_Chat_2026-02-27T11-20-29.md",
+    "summary": "[DRY RUN] New whatsapp from Team Chat: WhatsApp from Team Chat",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:34.414618+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_client@example.com_2026-02-27T11-20-34.md",
+    "summary": "[DRY RUN] New email from Client A <client@example.com>: URGENT: Overdue Invoice #2024-001",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:34.438905+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_jane.smith@example.com_2026-02-27T11-20-34.md",
+    "summary": "[DRY RUN] New email from Jane Smith <jane.smith@example.com>: Q1 Strategy Meeting — Can you attend Thursday?",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-27T11:20:34.465794+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_newsletter@deals.example.com_2026-02-27T11-20-34.md",
+    "summary": "[DRY RUN] New email from Newsletter <newsletter@deals.example.com>: 50% off all products this weekend only!",
+    "result": "success",
+    "error": null
   }
 ]
