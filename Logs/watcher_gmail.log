@@ -15,3 +15,5 @@
 [2026-02-26 21:41:22] [INFO] [gmail] [DRY RUN] gmail: processed 0 item(s) this cycle
 [2026-02-26 21:41:43] [INFO] [gmail] gmail watcher shutting down gracefully
 [2026-02-26 21:41:48] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
+[2026-02-27 07:20:50] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
+[2026-02-27 07:21:47] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
