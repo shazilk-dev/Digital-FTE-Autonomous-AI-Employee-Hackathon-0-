@@ -7,6 +7,13 @@
 credentials.json
 token.json
 token.pickle
+service_account.json
+
+# Watcher state (ephemeral, rebuilt on restart)
+.state/
+
+# Watcher log files (canonical logs are JSON in /Logs/)
+*.log
 
 # WhatsApp/Browser sessions
 sessions/

@@ -8,17 +8,17 @@ _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
-import base64
-import os
-import re
-from datetime import datetime, timezone
-from email.utils import parseaddr, parsedate_to_datetime
+import base64  # noqa: E402
+import os  # noqa: E402
+import re  # noqa: E402
+from datetime import datetime, timezone  # noqa: E402
+from email.utils import parseaddr, parsedate_to_datetime  # noqa: E402
 
-from googleapiclient.errors import HttpError
+from googleapiclient.errors import HttpError  # noqa: E402
 
-from scripts.utils.gmail_auth import get_gmail_service
-from scripts.utils.vault_helpers import sanitize_filename, write_action_file
-from scripts.watchers.base_watcher import BaseWatcher
+from scripts.utils.gmail_auth import get_gmail_service  # noqa: E402
+from scripts.utils.vault_helpers import sanitize_filename, write_action_file  # noqa: E402
+from scripts.watchers.base_watcher import BaseWatcher  # noqa: E402
 
 _BODY_MAX_LENGTH = 2000
 _MAX_MESSAGES_PER_CYCLE = 50
