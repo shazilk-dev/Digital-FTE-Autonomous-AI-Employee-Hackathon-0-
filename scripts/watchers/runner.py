@@ -595,7 +595,7 @@ if __name__ == "__main__":
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-    load_dotenv(override=True)
+    load_dotenv()
 
     parser = argparse.ArgumentParser(
         description="AI Employee Watcher Runner",

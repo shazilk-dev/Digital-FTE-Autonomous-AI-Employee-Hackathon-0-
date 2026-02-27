@@ -72,7 +72,7 @@ action_payload:
     body: "Full email body text"
 ```
 
-For reply_email:
+For reply_to_thread (alias: reply_email):
 ```yaml
 action_payload:
   tool: reply_to_thread
@@ -213,7 +213,7 @@ Changes to `params.body`, `params.to`, `params.subject` will be reflected in the
 | Field | Required | Default | Notes |
 |-------|----------|---------|-------|
 | type | Yes | — | Always `approval_request` |
-| action_type | Yes | — | send_email \| draft_email \| reply_email \| linkedin_post \| generic |
+| action_type | Yes | — | send_email \| draft_email \| reply_to_thread \| linkedin_post \| generic (`reply_email` accepted as alias) |
 | domain | Yes | — | email \| social \| finance \| general |
 | target | Yes | — | Human-readable target (email address, profile, etc.) |
 | priority | Yes | — | Inherits from source task: critical \| high \| medium \| low |

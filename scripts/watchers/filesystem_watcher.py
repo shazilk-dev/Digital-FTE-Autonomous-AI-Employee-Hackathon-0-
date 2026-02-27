@@ -456,6 +456,10 @@ class FileSystemWatcher(BaseWatcher):
 if __name__ == "__main__":
     import argparse
 
+    from dotenv import load_dotenv
+
+    load_dotenv()
+
     parser = argparse.ArgumentParser(description="FileSystem Watcher for AI Employee")
     parser.add_argument("--vault", default=None, help="Vault path (default: VAULT_PATH env)")
     parser.add_argument("--drop", default="Drop", help="Drop folder name (default: Drop)")

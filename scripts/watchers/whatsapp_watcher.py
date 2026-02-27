@@ -707,7 +707,7 @@ if __name__ == "__main__":
 
     from dotenv import load_dotenv
 
-    load_dotenv(override=True)
+    load_dotenv()
 
     parser = argparse.ArgumentParser(description="WhatsApp Watcher for AI Employee")
     parser.add_argument("--vault", default=None, help="Path to vault (default: VAULT_PATH env)")

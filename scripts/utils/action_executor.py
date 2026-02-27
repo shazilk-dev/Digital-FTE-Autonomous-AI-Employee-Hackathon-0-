@@ -20,7 +20,8 @@ _EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 _REQUIRED_PARAMS: dict[str, list[str]] = {
     "send_email": ["to", "subject", "body"],
     "draft_email": ["to", "subject", "body"],
-    "reply_email": ["thread_id", "body"],
+    "reply_to_thread": ["thread_id", "body"],
+    "reply_email": ["thread_id", "body"],  # backwards-compat alias for reply_to_thread
     "linkedin_post": ["content"],
     "generic": [],
 }
@@ -50,7 +51,8 @@ class ActionExecutor:
         self.supported_actions = {
             "send_email": self._execute_send_email,
             "draft_email": self._execute_draft_email,
-            "reply_email": self._execute_reply_email,
+            "reply_to_thread": self._execute_reply_email,
+            "reply_email": self._execute_reply_email,  # backwards-compat alias
             "linkedin_post": self._execute_linkedin_post,
             "generic": self._execute_generic,
         }
@@ -319,7 +321,7 @@ class ActionExecutor:
             result_msg = (
                 f"[DRY RUN] Would create draft to {target} with subject '{subject}'"
             )
-        elif action_type == "reply_email":
+        elif action_type in ("reply_to_thread", "reply_email"):
             target = str(params.get("thread_id", "unknown"))
             result_msg = f"[DRY RUN] Would reply to thread {target}"
         elif action_type == "linkedin_post":

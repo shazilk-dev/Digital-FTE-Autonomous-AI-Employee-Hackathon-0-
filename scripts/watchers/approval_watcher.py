@@ -130,16 +130,26 @@ class ApprovalWatcher(BaseWatcher):
 
     def check_for_updates(self) -> list[dict]:
         """
-        Scan both /Approved/ and /Rejected/ for ACTION_*.md files.
+        Scan both /Approved/ and /Rejected/ for approval request files.
 
         Returns list of item dicts sorted by priority (critical first),
         then by received/created timestamp (oldest first).
 
-        In DRY_RUN mode: generates sample files and returns them.
+        DRY_RUN mode: processes real files if present; only generates
+        synthetic sample data when both scan directories are empty.
         """
-        if self.is_dry_run:
+        items = self._scan_real_files()
+        if not items and self.is_dry_run:
             return self._generate_dry_run_data()
+        return items
 
+    def _scan_real_files(self) -> list[dict]:
+        """
+        Scan /Approved/ and /Rejected/ for all *.md approval request files.
+
+        Accepts any filename prefix (ACTION_*, APPROVAL_*, etc.) as long as
+        the frontmatter declares `type: approval_request`.
+        """
         items: list[dict] = []
 
         for scan_dir in self.scan_directories:
@@ -153,8 +163,14 @@ class ApprovalWatcher(BaseWatcher):
                 else "approval_rejection"
             )
 
-            for file_path in scan_dir.glob("ACTION_*.md"):
+            for file_path in scan_dir.glob("*.md"):
+                if file_path.name == ".gitkeep":
+                    continue
+
                 fm = read_frontmatter(file_path)
+                if fm.get("type") != "approval_request":
+                    continue
+
                 stat = file_path.stat()
                 created = datetime.fromtimestamp(
                     stat.st_ctime, tz=timezone.utc
@@ -693,8 +709,6 @@ if __name__ == "__main__":
 
     from dotenv import load_dotenv
 
-    load_dotenv(override=True)
-
     parser = argparse.ArgumentParser(description="Approval Watcher for AI Employee")
     parser.add_argument("--vault", default=None)
     parser.add_argument("--interval", type=int, default=10)
@@ -705,7 +719,20 @@ if __name__ == "__main__":
         help="Only check for stale approvals, then exit",
     )
     parser.add_argument("--expiry-hours", type=int, default=24)
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Force DRY_RUN mode (simulate actions, do not send real emails)",
+    )
     args = parser.parse_args()
+
+    # --dry-run flag takes precedence; set env var BEFORE load_dotenv so the
+    # watcher's is_dry_run check (which reads os.environ) sees the right value.
+    if args.dry_run:
+        os.environ["DRY_RUN"] = "true"
+
+    # Load .env WITHOUT override=True so shell env vars (and the flag above) win.
+    load_dotenv()
 
     watcher = ApprovalWatcher(
         vault_path=args.vault or os.getenv("VAULT_PATH", "."),
