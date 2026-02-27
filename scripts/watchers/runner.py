@@ -68,6 +68,14 @@ WATCHER_REGISTRY: list[WatcherEntry] = [
         required_env_vars=[],
         default_interval=30,
     ),
+    WatcherEntry(
+        name="approval",
+        module_path="scripts.watchers.approval_watcher",
+        class_name="ApprovalWatcher",
+        description="Monitors /Approved/ and /Rejected/ for HITL execution",
+        required_env_vars=[],
+        default_interval=10,
+    ),
 ]
 
 
