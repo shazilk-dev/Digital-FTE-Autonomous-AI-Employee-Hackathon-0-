@@ -1,4 +1,5 @@
 {
+  "enabledMcpjsonServers": ["email-mcp"],
   "permissions": {
     "allow": [
       "Read(**)",
