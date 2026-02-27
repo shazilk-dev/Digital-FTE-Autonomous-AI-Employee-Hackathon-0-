@@ -431,7 +431,7 @@ if __name__ == "__main__":
     import argparse
 
     from dotenv import load_dotenv
-    load_dotenv()
+    load_dotenv(override=True)
 
     parser = argparse.ArgumentParser(description="Gmail Watcher for AI Employee")
     parser.add_argument(

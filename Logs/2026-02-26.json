@@ -28,5 +28,505 @@
     "summary": "[DRY RUN] New email from Newsletter <newsletter@deals.example.com>: 50% off all products this weekend only!",
     "result": "success",
     "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.327430+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_akn.shazil@gmail.com_2026-02-26T16-51-34.md",
+    "summary": "New email from CSC-23F-089 Shazil Khan CS1B <akn.shazil@gmail.com>: ",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.366620+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_code@medito.app_2026-02-26T16-51-34.md",
+    "summary": "New email from Medito <code@medito.app>: Your verification code: 597443",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.429036+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_InnoStudio-noreply@microsoft.com_2026-02-26T16-51-34.md",
+    "summary": "New email from Innovation Studio Notification <InnoStudio-noreply@microsoft.com>: Your hackathon website access",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.462495+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_InnoStudio-noreply@microsoft.com_2026-02-26T16-51-34_1.md",
+    "summary": "New email from Innovation Studio Notification <InnoStudio-noreply@microsoft.com>: Your hackathon website access",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.485489+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_CloudPlatform-noreply@google.com_2026-02-26T16-51-34.md",
+    "summary": "New email from Google Cloud <CloudPlatform-noreply@google.com>: [Action Required] Upgrade Cloud Functions for Firebase configuration by Mar 31, 2027",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.524328+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_InnoStudio-noreply@microsoft.com_2026-02-26T16-51-34_2.md",
+    "summary": "New email from Innovation Studio Notification <InnoStudio-noreply@microsoft.com>: Your hackathon website access",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.554149+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_team@mail.cerebralvalley.ai_2026-02-26T16-51-34.md",
+    "summary": "New email from Cerebral Valley <team@mail.cerebralvalley.ai>: FriendliAI - The Inference Engine Behind vLLM",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.583222+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_InnoStudio-noreply@microsoft.com_2026-02-26T16-51-34_3.md",
+    "summary": "New email from Innovation Studio Notification <InnoStudio-noreply@microsoft.com>: Your hackathon website access",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.610867+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_InnoStudio-noreply@microsoft.com_2026-02-26T16-51-34_4.md",
+    "summary": "New email from Innovation Studio Notification <InnoStudio-noreply@microsoft.com>: Your hackathon website access",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.644804+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_verify@x.com_2026-02-26T16-51-34.md",
+    "summary": "New email from X <verify@x.com>: New login to X from ChromeDesktop on Windows",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.677242+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_verify@x.com_2026-02-26T16-51-34_1.md",
+    "summary": "New email from X <verify@x.com>: Your X password has been changed",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.711572+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_support@educative.io_2026-02-26T16-51-34.md",
+    "summary": "New email from The Educative Team <support@educative.io>: Introducing: Educative Go on Android",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.755352+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@archive.org_2026-02-26T16-51-34.md",
+    "summary": "New email from Internet Archive <noreply@archive.org>: Welcome to the Internet Archive",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.793906+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_no-reply@render.com_2026-02-26T16-51-34.md",
+    "summary": "New email from Render <no-reply@render.com>: [Render] New API Key Created",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.826136+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_hello@parsec.app_2026-02-26T16-51-34.md",
+    "summary": "New email from Parsec Team <hello@parsec.app>: Your Parsec Verification Code: RNcm09",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.861683+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@systeme.io_2026-02-26T16-51-34.md",
+    "summary": "New email from \"Systeme.io\" <noreply@systeme.io>: Confirm your email address",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.888808+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@nayapay.com_2026-02-26T16-51-34.md",
+    "summary": "New email from NayaPay <noreply@nayapay.com>: Your Rewind’s ready 🔥 Are you?",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.921642+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_drive-shares-dm-noreply@google.com_2026-02-26T16-51-34.md",
+    "summary": "New email from \"Ghufran Shah (via Google Sheets)\" <drive-shares-dm-noreply@google.com>: Spreadsheet shared with you: \"management survey form (Responses)\"",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.951828+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_drive-shares-dm-noreply@google.com_2026-02-26T16-51-34_1.md",
+    "summary": "New email from \"Ghufran Shah (via Google Forms)\" <drive-shares-dm-noreply@google.com>: Form shared with you: \"Management survey form\"",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:34.982348+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_no-reply-r42nNBDUEKzPYTY-zVmVEQ@mail.anthropic.com_2026-02-26T16-51-34.md",
+    "summary": "New email from Anthropic <no-reply-r42nNBDUEKzPYTY-zVmVEQ@mail.anthropic.com>: Welcome to the Pro plan",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.010616+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_notifications@link.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Link <notifications@link.com>: Your Link verification code: 258 823",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.035417+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_notifications@link.com_2026-02-26T16-51-35_1.md",
+    "summary": "New email from Link <notifications@link.com>: Your Link verification code: 133 298",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.062179+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@notify.thinkific.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Honhaar Jawan Program <noreply@notify.thinkific.com>: Official Notice: Revised Registration Deadline",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.091463+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@notify.thinkific.com_2026-02-26T16-51-35_1.md",
+    "summary": "New email from Honhaar Jawan Program <noreply@notify.thinkific.com>: Honhaar Student Card – Important Announcement for Applicants",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.117360+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@notify.thinkific.com_2026-02-26T16-51-35_2.md",
+    "summary": "New email from Honhaar Jawan Program <noreply@notify.thinkific.com>: Important Notice: Honhaar Jawan Program Now Launched",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.143650+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_hello@info.n8n.io_2026-02-26T16-51-35.md",
+    "summary": "New email from \"n8n.io\" <hello@info.n8n.io>: With templates, you’re already halfway there.",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.170705+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_adalatkhan1717428@gmail.com_2026-02-26T16-51-35.md",
+    "summary": "New email from adalat khan <adalatkhan1717428@gmail.com>: ",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.194429+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_notifications@link.com_2026-02-26T16-51-35_2.md",
+    "summary": "New email from Link <notifications@link.com>: Verify your email",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.223408+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@transactional.n8n.io_2026-02-26T16-51-35.md",
+    "summary": "New email from \"n8n.io\" <noreply@transactional.n8n.io>: Verify your n8n account",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.256590+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_team@m.ngrok.com_2026-02-26T16-51-35.md",
+    "summary": "New email from ngrok team <team@m.ngrok.com>: Your next steps on ngrok..",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.284535+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_donotreply@upwork.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Upwork Notification <donotreply@upwork.com>: Congrats on upgrading to Freelancer Plus!",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.315717+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_donotreply@upwork.com_2026-02-26T16-51-35_1.md",
+    "summary": "New email from Upwork Notification <donotreply@upwork.com>: Visa was added to Shazil Khan",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.347361+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_account-security-noreply@accountprotection.microsoft.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Microsoft account team <account-security-noreply@accountprotection.microsoft.com>: Microsoft account security info was added",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.376124+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_donotreply@upwork.com_2026-02-26T16-51-35_2.md",
+    "summary": "New email from donotreply@upwork.com: Action needed: Your profile is no longer appearing in client searches",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.410055+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_info@almawridinstitute.org_2026-02-26T16-51-35.md",
+    "summary": "New email from Al-Mawrid Institute <info@almawridinstitute.org>: Enrollment Received",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.436008+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_info@almawridinstitute.org_2026-02-26T16-51-35_1.md",
+    "summary": "New email from Al-Mawrid Institute <info@almawridinstitute.org>: Registration on https://almawridinstitute.org",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.466526+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_notify@x.com_2026-02-26T16-51-35.md",
+    "summary": "New email from X Support <notify@x.com>: Your account @sk_techi requires email verification",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.497564+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_enquiries.department@nvtti.pk_2026-02-26T16-51-35.md",
+    "summary": "New email from \"Nationwide Virtual & Technical Training Initiative (NVTTI)\" <enquiries.department@nvtti.pk>: Complete Your Application Now",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.526808+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_enquiries.department@nvtti.pk_2026-02-26T16-51-35_1.md",
+    "summary": "New email from \"Nationwide Virtual & Technical Training Initiative (NVTTI)\" <enquiries.department@nvtti.pk>: Email Verification Successful",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.554531+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_no-reply@panaversity.org_2026-02-26T16-51-35.md",
+    "summary": "New email from Panaversity <no-reply@panaversity.org>: Classes Start Today: OpenAI AgentKit No-Code Agents",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.580778+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_no-reply@t.mail.coursera.org_2026-02-26T16-51-35.md",
+    "summary": "New email from Coursera <no-reply@t.mail.coursera.org>: Welcome to the IBM Back-End Development!",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.606613+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_no-reply@notify.docker.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Docker <no-reply@notify.docker.com>: [Docker] You + Docker = Ready for Action",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.633027+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@name.com_2026-02-26T16-51-35.md",
+    "summary": "New email from \"Name.com Support\" <noreply@name.com>: Name.com - Order Confirmation - 25714983",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.658286+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@github.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Uswa Minael <noreply@github.com>: uswaminael-dev invited you to uswaminael-dev/My-learning",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.684179+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_noreply@wire.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Wire <noreply@wire.com>: 283294 is your Wire verification code",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.709818+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_service@nayapay.com_2026-02-26T16-51-35.md",
+    "summary": "New email from NayaPay <service@nayapay.com>: Your OTP is 413033",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.739056+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_security@getgitguardian.com_2026-02-26T16-51-35.md",
+    "summary": "New email from GitGuardian <security@getgitguardian.com>: [shazilk-dev/Baitussalam-SMS] MongoDB URI exposed on GitHub",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.770639+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_security@getgitguardian.com_2026-02-26T16-51-35_1.md",
+    "summary": "New email from GitGuardian <security@getgitguardian.com>: [shazilk-dev/Baitussalam-SMS] Generic High Entropy Secret exposed on GitHub",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.796866+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_icpc@portal.giki.edu.pk_2026-02-26T16-51-35.md",
+    "summary": "New email from GIK ICPC <icpc@portal.giki.edu.pk>: Appeal Submission Opportunity – DPSPC Disqualification",
+    "result": "success",
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-26T16:51:35.824960+00:00",
+    "action_type": "watcher_detect",
+    "actor": "gmail",
+    "input_file": null,
+    "output_file": "Needs_Action/email/EMAIL_identity@hackclub.com_2026-02-26T16-51-35.md",
+    "summary": "New email from Hack Club Identity <identity@hackclub.com>: ​[Hack Club] Your verification is being reviewed",
+    "result": "success",
+    "error": null
   }
 ]

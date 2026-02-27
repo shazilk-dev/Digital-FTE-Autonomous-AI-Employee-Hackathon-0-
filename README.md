@@ -71,3 +71,13 @@ Summary
 ├──────────────┼────────────────────────────────────────────────────────┤
 │ Lint check │ uv run ruff check scripts/ │
 └──────────────┴────────────────────────────────────────────────────────┘
+
+Your Gmail inbox
+↓
+Watcher finds unread+important emails
+↓
+Creates .md files in Needs_Action/email/
+↓
+Logs every action to Logs/2026-02-26.json
+↓
+Claude reads those files and reasons/acts

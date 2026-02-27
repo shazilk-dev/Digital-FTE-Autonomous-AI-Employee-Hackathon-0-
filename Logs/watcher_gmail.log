@@ -1,3 +1,17 @@
 [2026-02-26 21:11:16] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
 [2026-02-26 21:14:25] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
 [2026-02-26 21:18:24] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
+[2026-02-26 21:30:31] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
+[2026-02-26 21:31:09] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
+[2026-02-26 21:31:09] [INFO] [gmail] [DRY RUN] Starting gmail watcher (interval=120s, dry_run=True)
+[2026-02-26 21:31:09] [INFO] [gmail] [DRY RUN] gmail: processed 0 item(s) this cycle
+[2026-02-26 21:33:09] [INFO] [gmail] [DRY RUN] gmail: processed 0 item(s) this cycle
+[2026-02-26 21:35:10] [INFO] [gmail] [DRY RUN] gmail: processed 0 item(s) this cycle
+[2026-02-26 21:37:10] [INFO] [gmail] [DRY RUN] gmail: processed 0 item(s) this cycle
+[2026-02-26 21:39:02] [INFO] [gmail] gmail watcher shutting down gracefully
+[2026-02-26 21:39:22] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
+[2026-02-26 21:39:22] [INFO] [gmail] [DRY RUN] Starting gmail watcher (interval=120s, dry_run=True)
+[2026-02-26 21:39:22] [INFO] [gmail] [DRY RUN] gmail: processed 0 item(s) this cycle
+[2026-02-26 21:41:22] [INFO] [gmail] [DRY RUN] gmail: processed 0 item(s) this cycle
+[2026-02-26 21:41:43] [INFO] [gmail] gmail watcher shutting down gracefully
+[2026-02-26 21:41:48] [INFO] [gmail] [DRY RUN] Skipping Gmail authentication
