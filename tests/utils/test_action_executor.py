@@ -291,16 +291,27 @@ class TestExecuteDryRun:
         result = executor.execute(path)
         assert result["dry_run"] is True
 
-    def test_linkedin_live_not_implemented(self, tmp_vault):
-        """In live mode, linkedin_post returns not-implemented error."""
+    def test_linkedin_live_calls_cli(self, tmp_vault):
+        """In live mode, linkedin_post invokes the LinkedIn MCP CLI subprocess."""
         executor = ActionExecutor(tmp_vault, dry_run=False)
         fm = _base_fm(action_type="linkedin_post")
         fm["action_payload"]["tool"] = "create_post"
         fm["action_payload"]["params"] = {"content": "Hello!", "visibility": "public"}
         path = _make_approval_file(tmp_vault / "Approved", "linkedin_live.md", fm)
-        result = executor.execute(path)
-        assert result["success"] is False
-        assert "not yet implemented" in result["error"]
+
+        with patch("subprocess.run") as mock_run:
+            mock_run.return_value = MagicMock(
+                returncode=0,
+                stdout=json.dumps({"success": True, "post_id": "urn:li:share:123"}),
+                stderr="",
+            )
+            result = executor.execute(path)
+
+        assert result["success"] is True
+        cmd = mock_run.call_args[0][0]
+        cmd_str = " ".join(str(c) for c in cmd)
+        assert "linkedin-mcp" in cmd_str
+        assert "create_post" in cmd_str
 
     def test_generic_live_manual_execution(self, tmp_vault):
         """In live mode, generic action returns manual-execution error."""
