@@ -4,7 +4,7 @@
       "command": "node",
       "args": ["mcp-servers/email-mcp/dist/index.js"],
       "env": {
-        "DRY_RUN": "false",
+        "DRY_RUN": "true",
         "GMAIL_CREDENTIALS_PATH": "./credentials.json",
         "GMAIL_TOKEN_PATH": "./token.json"
       }
@@ -13,7 +13,7 @@
       "command": "node",
       "args": ["mcp-servers/linkedin-mcp/dist/index.js"],
       "env": {
-        "DRY_RUN": "false",
+        "DRY_RUN": "true",
         "LINKEDIN_SESSION_PATH": "./sessions/linkedin",
         "LINKEDIN_HEADLESS": "true"
       }

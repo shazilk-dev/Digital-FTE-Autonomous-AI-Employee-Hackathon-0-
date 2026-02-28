@@ -1,18 +1,25 @@
 """FileSystem Watcher — monitors /Drop/ folder for new files."""
 
-import fnmatch
-import mimetypes
-import os
-import shutil
-import time
-from datetime import datetime
+import sys
 from pathlib import Path
 
-from watchdog.events import FileSystemEventHandler
-from watchdog.observers import Observer
+# Allow running as: python scripts/watchers/filesystem_watcher.py
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
 
-from scripts.utils.vault_helpers import sanitize_filename, write_action_file
-from scripts.watchers.base_watcher import BaseWatcher
+import fnmatch  # noqa: E402
+import mimetypes  # noqa: E402
+import os  # noqa: E402
+import shutil  # noqa: E402
+import time  # noqa: E402
+from datetime import datetime  # noqa: E402
+
+from watchdog.events import FileSystemEventHandler  # noqa: E402
+from watchdog.observers import Observer  # noqa: E402
+
+from scripts.utils.vault_helpers import sanitize_filename, write_action_file  # noqa: E402
+from scripts.watchers.base_watcher import BaseWatcher  # noqa: E402
 
 _DEFAULT_EXTENSIONS: list[str] = [
     ".pdf", ".csv", ".xlsx", ".xls", ".txt", ".md",

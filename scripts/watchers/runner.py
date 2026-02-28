@@ -289,6 +289,27 @@ class WatcherManager:
                     proc.wait()
             except OSError as exc:
                 logger.warning("Error stopping watcher '%s': %s", name, exc)
+        else:
+            # Not tracked in-process — try to kill via PID file (cross-process stop)
+            pid_file = self._pid_file(name)
+            if pid_file.exists():
+                try:
+                    file_pid = int(pid_file.read_text(encoding="utf-8").strip())
+                    if self._is_process_alive(file_pid):
+                        import signal as _signal
+                        try:
+                            os.kill(file_pid, _signal.SIGTERM)
+                            # Give it up to 5s to exit
+                            for _ in range(50):
+                                time.sleep(0.1)
+                                if not self._is_process_alive(file_pid):
+                                    break
+                            else:
+                                os.kill(file_pid, _signal.SIGKILL)
+                        except OSError as exc:
+                            logger.warning("Error killing watcher '%s' (PID %d): %s", name, file_pid, exc)
+                except (ValueError, OSError):
+                    pass
 
         # Remove PID file
         pid_file = self._pid_file(name)
@@ -313,9 +334,14 @@ class WatcherManager:
         return True
 
     def stop_all(self) -> dict[str, bool]:
-        """Stop all running watchers."""
+        """Stop all running watchers (tracked processes + any with PID files)."""
         results: dict[str, bool] = {}
-        for name in list(self._processes.keys()):
+        # Collect names from both tracked processes and PID files
+        names: set[str] = set(self._processes.keys())
+        for entry in self.registry:
+            if self._pid_file(entry.name).exists():
+                names.add(entry.name)
+        for name in names:
             results[name] = self.stop(name)
         return results
 

@@ -46,6 +46,7 @@ def setup_logger(name: str, log_level: str | None = None) -> logging.Logger:
             log_file,
             maxBytes=5 * 1024 * 1024,  # 5 MB
             backupCount=3,
+            encoding="utf-8",
         )
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)

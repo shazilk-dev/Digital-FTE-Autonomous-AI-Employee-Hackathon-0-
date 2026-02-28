@@ -1,0 +1,1322 @@
+[
+  {
+    "Time": "02:25",
+    "Action": "Email Triage",
+    "Details": "ESCALATION: X security login alert for @sk_techi (new login from ChromeDesktop/W",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "02:25",
+    "Action": "Email Triage",
+    "Details": "FYI_ONLY: X password change confirmation for @sk_techi — auto-archived, no actio",
+    "Result": "success"
+  },
+  {
+    "Time": "02:49",
+    "Action": "Bronze Verification",
+    "Details": "Full pipeline check — Needs_Action/email/ confirmed empty, queue counts synced",
+    "Result": "success"
+  },
+  {
+    "Time": "02:55",
+    "Action": "email_triage",
+    "Details": "ESCALATION: URGENT overdue invoice #2024-001 from Client A <client@example.com>",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "02:56",
+    "Action": "email_triage",
+    "Details": "ESCALATION: URGENT overdue invoice #2024-001 from Client A <client@example.com>",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "02:56",
+    "Action": "email_triage",
+    "Details": "MEETING_REQUEST: Q1 Strategy Meeting from Jane Smith <jane.smith@example.com> —",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "02:56",
+    "Action": "email_triage",
+    "Details": "MEETING_REQUEST: Q1 Strategy Meeting from Jane Smith <jane.smith@example.com> —",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "02:56",
+    "Action": "email_triage",
+    "Details": "SPAM: Promotional newsletter from newsletter@deals.example.com — '50% off all pr",
+    "Result": "success"
+  },
+  {
+    "Time": "02:56",
+    "Action": "email_triage",
+    "Details": "SPAM: Promotional newsletter from newsletter@deals.example.com — duplicate promo",
+    "Result": "success"
+  },
+  {
+    "Time": "09:00",
+    "Action": "email_triage",
+    "Details": "ESCALATION: Overdue invoice #2024-001 from Client A — ,000, 30 days overdue, esc",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "09:00",
+    "Action": "email_triage",
+    "Details": "MEETING_REQUEST: Q1 Strategy Meeting Thursday 2pm from Jane Smith — draft reply",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "09:00",
+    "Action": "email_triage",
+    "Details": "SPAM: Promotional newsletter from newsletter@deals.example.com — auto-archived,",
+    "Result": "success"
+  },
+  {
+    "Time": "14:59",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "14:59",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "15:01",
+    "Action": "Rejected: send_email",
+    "Details": "Target: reject@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "15:17",
+    "Action": "Executed: send_email",
+    "Details": "Target: verify@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "07:10",
+    "Action": "email_triage",
+    "Details": "Processed multi-request email from Sarah Johnson (Client B): invoice, contract r",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "07:10",
+    "Action": "plan_create",
+    "Details": "Created 7-step task plan: PLAN_task_sarah_johnson_invoice_renewal_meeting_2026-0",
+    "Result": "success"
+  },
+  {
+    "Time": "07:10",
+    "Action": "hitl_request",
+    "Details": "Created 2 approval requests: invoice email + comprehensive reply for sarah@clien",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "11:27",
+    "Action": "linkedin_post_drafted",
+    "Details": "LinkedIn Insight post drafted for Expertise pillar — HITL safety layer insight",
+    "Result": "pending_approval"
+  },
+  {
+    "Time": "12:48",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:48",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:49",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:49",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:49",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:49",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:50",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:50",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:50",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:51",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:51",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:51",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:52",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:52",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:52",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:52",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:53",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:53",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:53",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:53",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:54",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:54",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:54",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:54",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:55",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:55",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:55",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:55",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:56",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:57",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:57",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:57",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:57",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:57",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:57",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:58",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:59",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:59",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:59",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:59",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "12:59",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "12:59",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:00",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:00",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:00",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:00",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:00",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:00",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:00",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:01",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:01",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:01",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:01",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:01",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:02",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:03",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:03",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:03",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:03",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:03",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:04",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:04",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:04",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:04",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:04",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:05",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:06",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:07",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:07",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:07",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:07",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:07",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:07",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:08",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:09",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:09",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:09",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:09",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:09",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:09",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:10",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:11",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:12",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:12",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:12",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:12",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:12",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:12",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:12",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:13",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:13",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:13",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:13",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:14",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:15",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:15",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:15",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:15",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:15",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:15",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:16",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:16",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:16",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:16",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:16",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:17",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:17",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:17",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:17",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:18",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:18",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:18",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:18",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:19",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:19",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:20",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:21",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:21",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:21",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:21",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:22",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:22",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:22",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:22",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:23",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:23",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:23",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:23",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:24",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:24",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:24",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:24",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:25",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:25",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:25",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  },
+  {
+    "Time": "13:25",
+    "Action": "Rejected: draft_email",
+    "Details": "Target: boss@example.com",
+    "Result": "rejected"
+  },
+  {
+    "Time": "13:25",
+    "Action": "Executed: send_email",
+    "Details": "Target: test@example.com",
+    "Result": "success"
+  }
+]
