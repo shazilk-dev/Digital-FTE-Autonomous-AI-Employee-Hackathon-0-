@@ -1,5 +1,5 @@
 {
-  "enabledMcpjsonServers": ["email-mcp"],
+  "enabledMcpjsonServers": ["email-mcp", "linkedin-mcp"],
   "permissions": {
     "allow": [
       "Read(**)",
