@@ -7,6 +7,7 @@
 
 ## Table of Contents
 
+0. [Real-World Usage — How This Helps You Daily](#0-real-world-usage--how-this-helps-you-daily)
 1. [Prerequisites](#1-prerequisites)
 2. [Environment Setup](#2-environment-setup)
 3. [DRY_RUN Mode — Safe Testing](#3-dry-run-mode--safe-testing)
@@ -21,6 +22,186 @@
 12. [Complete Pipeline Flow](#12-complete-pipeline-flow)
 13. [Verification Checklist](#13-verification-checklist)
 14. [Troubleshooting](#14-troubleshooting)
+
+---
+
+## 0. Real-World Usage — How This Helps You Daily
+
+> **Skip this section if you just want install commands.** Read it if you want to understand *why* this project exists and what your actual daily workflow looks like.
+
+### The idea in one sentence
+
+You run a business (or manage a busy personal life). Instead of you checking email every hour, triaging WhatsApp messages, writing LinkedIn posts, and chasing invoices — your AI Employee does the watching and drafting, you just review and approve.
+
+### What the system does while you're not looking
+
+Once set up and running, the system works in the background 24/7:
+
+| Every 2 min | Checks Gmail for new emails — classifies and files them |
+| Every 1 min | Checks WhatsApp for messages from clients/VIPs matching your keywords |
+| Every 30s | Watches your `/Drop/` folder for any files you drop in |
+| Every 30s | Checks `/Approved/` — if you approved an action, executes it immediately |
+| 08:00 daily | Runs morning triage — processes everything that came in overnight |
+| Mon/Wed/Fri 09:30 | Drafts a LinkedIn post for your review |
+| Every 6h | Flags any approvals that have been sitting unanswered for >24h |
+
+You open Obsidian or your terminal in the morning. Everything is already sorted.
+
+---
+
+### Your Daily Workflow (Production)
+
+```
+Morning
+  │
+  ▼
+Open Dashboard.md in Obsidian
+  │  → See queue counts: 3 emails, 1 WhatsApp, 0 files pending
+  │  → See activity log: what the AI did overnight
+  │
+  ▼
+Open Needs_Action/email/
+  │  → 3 structured email files, each pre-classified with priority
+  │  → AI says: this one is INVOICE_ACTION (high), this is REPLY_NEEDED (medium), this is SPAM
+  │
+  ▼
+Run: claude "/email-triage"   (or it already ran via morning_triage schedule)
+  │  → AI reads each email, drafts replies, writes analysis Plans
+  │  → Anything needing your sign-off lands in Pending_Approval/
+  │
+  ▼
+Open Pending_Approval/
+  │  → Review 1-2 approval files (drafted email replies, LinkedIn post, etc.)
+  │  → You glance at the draft — looks good → move to Approved/
+  │  → Within 30 seconds: email is sent, LinkedIn post is published
+  │
+  ▼
+Done. Your inbox is handled. Post is live. You didn't write a single email.
+```
+
+**Total time spent: 5-10 minutes reviewing, not hours managing.**
+
+---
+
+### Scenario 1 — Client emails asking about an invoice
+
+**Without AI Employee:**
+You check email, read the thread, figure out what invoice they mean, write a reply, send it.
+
+**With AI Employee:**
+```
+1. Gmail watcher detects the email (within 2 min)
+   → Creates: Needs_Action/email/EMAIL_client_2026-02-28T09-00-00.md
+   → Priority: critical (contains "invoice")
+
+2. Morning triage (or you run /email-triage)
+   → Classifies as: INVOICE_ACTION
+   → Reads Company_Handbook.md → knows Client is VIP tier
+   → Drafts a professional reply referencing the invoice details
+   → Creates: Plans/PLAN_email_INVOICE_ACTION_client_*.md
+   → Creates: Pending_Approval/APPROVAL_email_send_client_*.md
+
+3. You open the approval file (30 seconds)
+   → Draft looks right → move file to Approved/
+
+4. Approval Watcher fires (within 30 seconds)
+   → Calls email-mcp → Gmail sends the reply
+
+5. Done. Client gets a reply. You spent 30 seconds.
+```
+
+---
+
+### Scenario 2 — You receive an invoice PDF to process
+
+**Without AI Employee:**
+Someone emails a PDF. You download it, figure out what it is, decide what to do with it.
+
+**With AI Employee:**
+```
+1. Drag the PDF into your /Drop/ folder
+
+2. Filesystem Watcher detects it (within 30s)
+   → Detects "invoice" in filename → priority: high
+   → Creates: Needs_Action/file/FILE_Invoice_Jan_*.md
+   → Copies PDF to: Attachments/
+
+3. You run /email-triage or task-planner
+   → AI reads the action file, plans what to do
+   → Creates: Plans/PLAN_file_invoice_*.md with recommended steps
+
+4. You review the Plan, take action (or approve a response)
+```
+
+---
+
+### Scenario 3 — WhatsApp client message at 11pm
+
+**Without AI Employee:**
+You either ignore it (bad) or break your evening to reply (worse).
+
+**With AI Employee:**
+```
+1. WhatsApp Watcher detects the message (within 1 min)
+   → Client is in your VIP_CHATS list → priority: critical
+   → Creates: Needs_Action/whatsapp/WHATSAPP_client_*.md
+
+2. Morning triage picks it up at 08:00
+   → Classifies, drafts a reply, creates approval request
+
+3. You approve in the morning
+   → Reply sends via MCP
+   → Client got a timely, professional response
+   → You didn't touch your phone at 11pm
+```
+
+---
+
+### Scenario 4 — LinkedIn post without thinking about it
+
+**Without AI Employee:**
+You keep meaning to post on LinkedIn. You don't. Weeks go by.
+
+**With AI Employee:**
+```
+Mon/Wed/Fri at 09:30:
+  → social-post skill reads Business_Goals.md
+  → Reads recent vault activity (what you've been working on)
+  → Drafts a relevant thought-leadership post
+  → Creates: Pending_Approval/social/APPROVAL_linkedin_post_*.md
+
+You open it at 10am:
+  → Post looks good → move to Approved/
+  → Approval Watcher calls linkedin-mcp → post published
+
+You're posting 3x/week with ~30 seconds of effort per post.
+```
+
+---
+
+### What YOU do vs what the AI does
+
+| Task | You | AI Employee |
+|------|-----|-------------|
+| Check email | Never again | Every 2 minutes |
+| Read & classify emails | Never again | Automatically |
+| Draft email replies | Review only (30s) | Drafts them |
+| Send approved replies | Move a file | Executes via MCP |
+| Monitor WhatsApp keywords | Never | Every 60s |
+| Process file drops | Drop file in folder | Creates action item |
+| Write LinkedIn posts | Review only (30s) | Drafts 3x/week |
+| Flag stale tasks | Never | Every 6 hours |
+| Audit trail | Check Logs/ anytime | Written automatically |
+
+### Your control panel — Dashboard.md
+
+Open `Dashboard.md` in Obsidian at any time to see:
+- **Queue Summary** — how many items are waiting in each folder
+- **Pending Actions** — what's waiting for your approval right now
+- **Activity Log** — everything the AI did (with timestamps)
+- **System Health** — are all 4 watchers running? Are MCP servers available?
+
+You never need to run a command to know what's happening.
 
 ---
 
