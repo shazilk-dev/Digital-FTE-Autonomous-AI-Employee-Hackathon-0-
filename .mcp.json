@@ -13,7 +13,7 @@
       "command": "node",
       "args": ["mcp-servers/linkedin-mcp/dist/index.js"],
       "env": {
-        "DRY_RUN": "true",
+        "DRY_RUN": "false",
         "LINKEDIN_SESSION_PATH": "./sessions/linkedin",
         "LINKEDIN_HEADLESS": "true"
       }

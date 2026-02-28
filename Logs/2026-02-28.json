@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-02-28T07:09:40.713704+00:00",
+    "action_type": "file_move",
+    "actor": "claude_code",
+    "input_file": "Needs_Action\\email\\EMAIL_complex_test_2026-02-27T10-00-00.md",
+    "output_file": "Done\\EMAIL_complex_test_2026-02-27T10-00-00.md",
+    "summary": "Moved EMAIL_complex_test_2026-02-27T10-00-00.md to Done",
+    "result": "success",
+    "error": null
+  }
+]

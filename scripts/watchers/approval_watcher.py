@@ -147,8 +147,8 @@ class ApprovalWatcher(BaseWatcher):
         """
         Scan /Approved/ and /Rejected/ for all *.md approval request files.
 
-        Accepts any filename prefix (ACTION_*, APPROVAL_*, etc.) as long as
-        the frontmatter declares `type: approval_request`.
+        Only processes files with the ACTION_ prefix whose frontmatter
+        declares `type: approval_request`.
         """
         items: list[dict] = []
 
@@ -165,6 +165,9 @@ class ApprovalWatcher(BaseWatcher):
 
             for file_path in scan_dir.glob("*.md"):
                 if file_path.name == ".gitkeep":
+                    continue
+
+                if not file_path.name.startswith("ACTION_"):
                     continue
 
                 fm = read_frontmatter(file_path)
