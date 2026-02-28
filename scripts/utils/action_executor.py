@@ -285,13 +285,25 @@ class ActionExecutor:
             cmd.append("--reply-all")
         return self._run_cli(cmd)
 
-    def _execute_linkedin_post(self, params: dict) -> dict:  # noqa: ARG002
-        """Placeholder for Phase S5."""
-        return {
-            "success": False,
-            "result": None,
-            "error": "LinkedIn MCP not yet implemented",
-        }
+    def _execute_linkedin_post(self, params: dict) -> dict:
+        """Execute linkedin_post via LinkedIn MCP CLI."""
+        content = params.get("content", "")
+        visibility = params.get("visibility", "public")
+
+        if not content:
+            return {
+                "success": False,
+                "result": None,
+                "error": "Missing required param: content",
+            }
+
+        cmd = [
+            "npx", "tsx", str(self._get_linkedin_cli_path()),
+            "create_post",
+            "--content", content,
+            "--visibility", str(visibility),
+        ]
+        return self._run_cli(cmd)
 
     def _execute_generic(self, params: dict) -> dict:  # noqa: ARG002
         """Generic executor — logs the action but does not execute."""
@@ -397,6 +409,13 @@ class ActionExecutor:
         if custom:
             return Path(custom)
         return self.vault_path / "mcp-servers" / "email-mcp" / "src" / "cli.ts"
+
+    def _get_linkedin_cli_path(self) -> Path:
+        """Get the path to the LinkedIn MCP CLI."""
+        custom = os.getenv("LINKEDIN_MCP_CLI_PATH")
+        if custom:
+            return Path(custom)
+        return self.vault_path / "mcp-servers" / "linkedin-mcp" / "src" / "cli.ts"
 
     def _log_execution(
         self, approved_file: Path, action_type: str, result: dict
